@@ -1,0 +1,565 @@
+header {
+  display: flex;
+  width: 100%;
+  padding-left: 65px;
+  padding-right: 178px;
+  padding-top: 20px;
+  z-index: 20;
+  position: absolute;
+}
+header .menu-conteiner {
+  width: 100%;
+  height: 1080px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  z-index: -1;
+  display: none;
+}
+header .menu-conteiner .body-menu {
+  height: 1080px;
+  width: 1564px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+header .menu-conteiner .body-menu .menu-list-con {
+  width: 1564px;
+  flex: 1;
+  display: flex;
+}
+header .menu-conteiner .body-menu .menu-list-con .menu-line {
+  height: 100%;
+  flex: 1;
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/menu/line.svg), url(../img/menu/Line2.svg);
+  background-size: 2px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: -1px 62%, 100.3% 62%;
+}
+header .menu-conteiner .body-menu .menu-list-con .menu-line .menu-text {
+  color: #FFF;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 230px;
+}
+header .menu-conteiner .body-menu .menu-list-con .menu-line .btn-menu {
+  position: absolute;
+  top: 520px;
+  display: none;
+}
+header .menu-conteiner .body-menu .menu-list-con .menu-line:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-size: 2px 100%;
+  background-position: left, right;
+}
+header .menu-conteiner .body-menu .menu-list-con .menu-line:hover .btn-menu {
+  display: block;
+}
+header .menu-conteiner .body-menu .info-menu-con {
+  width: 1564px;
+  height: 280px;
+  background: #FFF;
+  padding-top: 54px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+header .menu-conteiner .body-menu .info-menu-con .top-info-menu {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 49px;
+  border-bottom: 1px solid lightgray;
+}
+header .menu-conteiner .body-menu .info-menu-con .top-info-menu .logo-info-menu {
+  margin-left: -6px;
+}
+header .menu-conteiner .body-menu .info-menu-con .top-info-menu .about-top-info {
+  color: #000;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 16.68px;
+  text-transform: uppercase;
+  margin-left: 64px;
+}
+header .menu-conteiner .body-menu .info-menu-con .top-info-menu .arrow2-info-menu {
+  margin-left: auto;
+}
+header .menu-conteiner .body-menu .info-menu-con .bot-info-menu {
+  padding-left: 31px;
+  display: flex;
+  margin-top: 33px;
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+}
+header .menu-conteiner .body-menu .info-menu-con .bot-info-menu .logo-info-menu {
+  display: flex;
+  align-items: center;
+}
+header .menu-conteiner .body-menu .info-menu-con .bot-info-menu .map-menu img {
+  margin-right: 30px;
+  margin-top: 1px;
+}
+header .menu-conteiner .body-menu .info-menu-con .bot-info-menu .time-menu {
+  margin-left: 137px;
+  margin-top: 1px;
+}
+header .menu-conteiner .body-menu .info-menu-con .bot-info-menu .time-menu img {
+  margin-right: 30px;
+  margin-top: 1px;
+}
+header .menu-conteiner .body-menu .info-menu-con .bot-info-menu .email-menu {
+  margin-left: 90px;
+  margin-top: -1px;
+}
+header .menu-conteiner .body-menu .info-menu-con .bot-info-menu .email-menu img {
+  margin-right: 34px;
+  margin-top: 0px;
+}
+header .menu-conteiner .body-menu .info-menu-con .bot-info-menu .phone-menu {
+  margin-left: 109px;
+}
+header .menu-conteiner .body-menu .info-menu-con .bot-info-menu .phone-menu img {
+  margin-right: 38px;
+  margin-top: 0px;
+}
+header .menu-conteiner-visible {
+  display: block;
+}
+header .logo-container {
+  width: 68px;
+  height: 54px;
+  margin-top: 17px;
+  margin-right: 45px;
+}
+header .body-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 19px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+header .body-container .left-header {
+  display: flex;
+  align-items: center;
+}
+header .body-container .left-header .icon-menu {
+  background: rgba(255, 255, 255, 0);
+}
+header .body-container .left-header .number-menu {
+  margin-left: 127px;
+  color: #FFF;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+header .body-container .right-container {
+  display: flex;
+  align-items: center;
+}
+header .body-container .right-container .req-call {
+  color: #FFAC30;
+  text-align: right;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-right: 46px;
+  margin-top: 1px;
+}
+header .body-container .right-container .btn-container {
+  padding-right: 32px;
+}
+header .body-container .right-container .btn-container button {
+  border: none;
+  background-color: rgba(9, 5, 4, 0);
+}
+header .body-container .right-container .btn-container button img {
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width: 1441px) {
+  header {
+    display: flex;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 20px;
+    z-index: 20;
+    position: absolute;
+  }
+  header .menu-conteiner {
+    width: 100%;
+    height: 810px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    z-index: -1;
+    display: none;
+  }
+  header .menu-conteiner .body-menu {
+    height: 810px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  header .menu-conteiner .body-menu .menu-list-con {
+    width: 100%;
+    flex: 1;
+    display: flex;
+  }
+  header .menu-conteiner .body-menu .menu-list-con .menu-line {
+    height: 100%;
+    flex: 1;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/menu/line.svg), url(../img/menu/Line2.svg);
+    background-size: 2px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: -1px 62%, 100.3% 62%;
+  }
+  header .menu-conteiner .body-menu .menu-list-con .menu-line .menu-text {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 230px;
+  }
+  header .menu-conteiner .body-menu .menu-list-con .menu-line .btn-menu {
+    position: absolute;
+    top: 520px;
+    display: none;
+  }
+  header .menu-conteiner .body-menu .menu-list-con .menu-line:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    background-size: 2px 100%;
+    background-position: left, right;
+  }
+  header .menu-conteiner .body-menu .menu-list-con .menu-line:hover .btn-menu {
+    display: block;
+  }
+  header .menu-conteiner .body-menu .info-menu-con {
+    width: 100%;
+    height: 180px;
+    background: #FFF;
+    padding-top: 24px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  header .menu-conteiner .body-menu .info-menu-con .top-info-menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 19px;
+    border-bottom: 1px solid lightgray;
+  }
+  header .menu-conteiner .body-menu .info-menu-con .top-info-menu .logo-info-menu {
+    margin-left: -6px;
+  }
+  header .menu-conteiner .body-menu .info-menu-con .top-info-menu .about-top-info {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 16.68px;
+    text-transform: uppercase;
+    margin-left: 64px;
+  }
+  header .menu-conteiner .body-menu .info-menu-con .top-info-menu .arrow2-info-menu {
+    margin-left: auto;
+  }
+  header .menu-conteiner .body-menu .info-menu-con .bot-info-menu {
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 33px;
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  header .menu-conteiner .body-menu .info-menu-con .bot-info-menu .logo-info-menu {
+    display: flex;
+    align-items: center;
+  }
+  header .menu-conteiner .body-menu .info-menu-con .bot-info-menu .map-menu img {
+    margin-right: 30px;
+    margin-top: 1px;
+  }
+  header .menu-conteiner .body-menu .info-menu-con .bot-info-menu .time-menu {
+    margin-left: 0px;
+    margin-top: 1px;
+  }
+  header .menu-conteiner .body-menu .info-menu-con .bot-info-menu .time-menu img {
+    margin-right: 30px;
+    margin-top: 1px;
+  }
+  header .menu-conteiner .body-menu .info-menu-con .bot-info-menu .email-menu {
+    margin-left: 0px;
+    margin-top: -1px;
+  }
+  header .menu-conteiner .body-menu .info-menu-con .bot-info-menu .email-menu img {
+    margin-right: 34px;
+    margin-top: 0px;
+  }
+  header .menu-conteiner .body-menu .info-menu-con .bot-info-menu .phone-menu {
+    margin-left: 0px;
+  }
+  header .menu-conteiner .body-menu .info-menu-con .bot-info-menu .phone-menu img {
+    margin-right: 38px;
+    margin-top: 0px;
+  }
+  header .menu-conteiner-visible {
+    display: block;
+  }
+  header .logo-container {
+    width: 68px;
+    height: 54px;
+    margin-top: 17px;
+    margin-right: 45px;
+  }
+  header .body-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 19px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  header .body-container .left-header {
+    display: flex;
+    align-items: center;
+  }
+  header .body-container .left-header .icon-menu {
+    background: rgba(255, 255, 255, 0);
+  }
+  header .body-container .left-header .number-menu {
+    margin-left: 127px;
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.6px;
+  }
+  header .body-container .right-container {
+    display: flex;
+    align-items: center;
+  }
+  header .body-container .right-container .req-call {
+    color: #FFAC30;
+    text-align: right;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-right: 46px;
+    margin-top: 1px;
+  }
+  header .body-container .right-container .btn-container {
+    padding-right: 32px;
+  }
+  header .body-container .right-container .btn-container button {
+    border: none;
+    background-color: rgba(9, 5, 4, 0);
+  }
+  header .body-container .right-container .btn-container button img {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 1000px) {
+  header {
+    display: flex;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+    z-index: 20;
+    position: absolute;
+    padding-bottom: 9px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  header .menu-conteiner-visible {
+    display: block;
+  }
+  header .logo-container {
+    width: 68px;
+    height: 54px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 43px;
+  }
+  header .body-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
+  header .body-container .left-header {
+    display: flex;
+    align-items: center;
+  }
+  header .body-container .left-header .icon-menu {
+    background: rgba(255, 255, 255, 0);
+  }
+  header .body-container .left-header .number-menu {
+    margin-left: 127px;
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    display: none;
+  }
+  header .body-container .right-container {
+    display: flex;
+    align-items: center;
+  }
+  header .body-container .right-container .req-call {
+    color: #FFAC30;
+    text-align: right;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-right: 46px;
+    margin-top: 1px;
+  }
+  header .body-container .right-container .btn-container {
+    padding-right: 20px;
+  }
+  header .body-container .right-container .btn-container button {
+    border: none;
+    background-color: rgba(9, 5, 4, 0);
+  }
+  header .body-container .right-container .btn-container button img {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    display: flex;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+    z-index: 20;
+    position: absolute;
+    padding-bottom: 9px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  header .menu-conteiner-visible {
+    display: block;
+  }
+  header .logo-container {
+    width: 68px;
+    height: 54px;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 22px;
+  }
+  header .body-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
+  header .body-container .left-header {
+    display: flex;
+    align-items: center;
+  }
+  header .body-container .left-header .icon-menu {
+    background: rgba(255, 255, 255, 0);
+  }
+  header .body-container .left-header .number-menu {
+    margin-left: 127px;
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    display: none;
+  }
+  header .body-container .right-container {
+    display: flex;
+    align-items: center;
+  }
+  header .body-container .right-container .req-call {
+    color: #FFAC30;
+    text-align: right;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-right: 46px;
+    margin-top: 1px;
+    display: none;
+  }
+  header .body-container .right-container .btn-container {
+    padding-right: 20px;
+  }
+  header .body-container .right-container .btn-container button {
+    border: none;
+    background-color: rgba(9, 5, 4, 0);
+  }
+  header .body-container .right-container .btn-container button img {
+    width: 60px;
+    height: 60px;
+  }
+}
