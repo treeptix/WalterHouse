@@ -5,7 +5,7 @@
   z-index: 20;
 }
 .left-text-body .text-90grad-container {
-  margin-top: 86px;
+  margin-top: 16px;
   margin-left: -72px;
 }
 .left-text-body .text-90grad-container .text-90grad {
@@ -41,7 +41,7 @@
   justify-content: space-between;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1800px) {
   .left-text-body {
     display: none;
   }
